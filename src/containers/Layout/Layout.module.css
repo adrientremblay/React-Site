@@ -7,10 +7,12 @@ header {
 }
 
 .Main {
-  width: 75%;
-  padding-top: 5vw;
-  padding-left: 5vw;
+  width: 80%;
+  padding: 5vw 5vw 5vw 5vw;
+  margin: 0px auto;
+  margin-top: 5vh;
   background-color: black;
-  min-height: 100vh;
+  border: 2px solid white;
   color: white;
+  min-height: 70vh;
 }
