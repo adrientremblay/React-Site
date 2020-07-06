@@ -1,11 +1,11 @@
 .Post {
   width: 75%;
   margin: 25px 25px 25px 25px;
-  padding: 10px 10px 10px 10px;
   display: inline-block;
   font-family: "Roboto Mono", monospace;
   color: green;
   background-color: black;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
 }
 
 .Title {

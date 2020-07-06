@@ -70,3 +70,4 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 #inspiration:
 
 - http://www.pascalvangemert.nl/#/abilities
+- https://pradyuman7.github.io/
