@@ -10,5 +10,7 @@ header {
   width: 75%;
   padding-top: 5vw;
   padding-left: 5vw;
-  background-color: lightgray;
+  background-color: black;
+  min-height: 100vh;
+  color: white;
 }
