@@ -19,6 +19,7 @@ const layout = (props) => {
       <div className={classes.Main}>
         <Route path="/" exact component={Face} />
         <Route path="/blog" exact component={Blog} />
+        {/* <Route path="/resume" exact componen */}
       </div>
     </React.Fragment>
   );

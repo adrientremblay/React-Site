@@ -1,18 +1,17 @@
 header {
-  background-color: #1d113b;
-  top: 10%;
-  right: 10%;
-  width: 100px;
+  top: 5vh;
+  right: 2%;
+  width: 10%;
   position: fixed;
 }
 
 .Main {
-  width: 80%;
-  padding: 5vw 5vw 5vw 5vw;
-  margin: 0px auto;
+  width: 75%;
+  margin-left: 5%;
+  padding-left: 5%;
   margin-top: 5vh;
   background-color: black;
-  border: 2px solid white;
+  border: 2px dashed white;
   color: white;
-  min-height: 70vh;
+  min-height: 90vh;
 }
