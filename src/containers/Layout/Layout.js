@@ -1,26 +1,17 @@
 import React from "react";
-import { Route, Link } from "react-router-dom";
+import { Route } from "react-router-dom";
 import Blog from "../Blog/Blog";
 import Face from "../Face/Face";
 import classes from "./Layout.module.css";
+import NavLink from "../../hoc/NavLink/NavLink";
 
 const layout = (props) => {
   return (
     <React.Fragment>
       <header>
         <nav>
-          <ul>
-            <li>
-              <Link className={classes.Link} to="/">
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link className={classes.Link} to="/blog">
-                Blog
-              </Link>
-            </li>
-          </ul>
+          <NavLink to="/">Home</NavLink>
+          <NavLink to="/blog">Blog</NavLink>
         </nav>
       </header>
 
