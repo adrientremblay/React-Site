@@ -1,18 +1,29 @@
 header {
-  background-color: red;
-  top: 0;
-  left: 0;
+  background-color: #1d113b;
+  top: 10%;
+  right: 10%;
+  width: 100px;
+  position: fixed;
 }
 
-ul {
+nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-li {
+nav li {
   display: inline-block;
-  background-color: aqua;
   height: 50px;
   margin-right: 20px;
+  font-size: large;
+}
+
+.Link {
+  color: white;
+  margin: 0px auto;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: large;
 }
