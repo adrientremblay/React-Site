@@ -4,9 +4,13 @@ import classes from "./TerminalBar.module.css";
 const terminalBar = (props) => {
   return (
     <div className={classes.Bar}>
-      <div className={classes.Buttons}></div>
+      <div className={classes.Buttons}>
+        <span className={classes.Circle} />
+        <span className={classes.Circle} />
+        <span className={classes.Circle} />
+      </div>
 
-      <div className={classes.Title}></div>
+      <div className={classes.Title}>adrientremblay@blog:~</div>
     </div>
   );
 };

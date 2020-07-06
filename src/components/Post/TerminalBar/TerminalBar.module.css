@@ -3,3 +3,21 @@
   height: 20px;
   background-color: gray;
 }
+
+.Circle {
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+  border-radius: 15px;
+  margin-left: 2px;
+  border-width: 1px;
+  background-color: black;
+}
+
+.Title {
+  text-align: center;
+}
+
+.Buttons {
+  position: absolute;
+}
