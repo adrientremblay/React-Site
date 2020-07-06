@@ -15,8 +15,10 @@ const layout = (props) => {
         </nav>
       </header>
 
-      <Route path="/" exact component={Face} />
-      <Route path="/blog" exact component={Blog} />
+      <div className={classes.Main}>
+        <Route path="/" exact component={Face} />
+        <Route path="/blog" exact component={Blog} />
+      </div>
     </React.Fragment>
   );
 };
