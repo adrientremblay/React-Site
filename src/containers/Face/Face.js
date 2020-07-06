@@ -2,7 +2,11 @@ import React, { Component } from "react";
 
 class Face extends Component {
   render() {
-    return <div>I am the face!</div>;
+    return (
+      <div>
+        <h3>Hi my name is Adrien Tremblay</h3>
+      </div>
+    );
   }
 }
 

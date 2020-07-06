@@ -2,6 +2,7 @@ import React from "react";
 import { Route, Link } from "react-router-dom";
 import Blog from "../Blog/Blog";
 import Face from "../Face/Face";
+import classes from "./Layout.module.css";
 
 const layout = (props) => {
   return (
