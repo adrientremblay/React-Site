@@ -1,7 +1,12 @@
 import React from "react";
 import Post from "../../../components/Post/Post";
+import axios from "../../../axios";
 
 const posts = (props) => {
+  let posts = axios.get("/posts").then((posts) => {
+    console.log(posts);
+  });
+
   return (
     <React.Fragment>
       <Post
