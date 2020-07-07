@@ -5,7 +5,7 @@ const Schema = mongoose.Schema;
 const postSchema = new Schema(
   {
     username: { type: String, required: true },
-    body: { type: String, required: true },
+    description: { type: String, required: true },
     date: { type: DataCue, required: true },
   },
   {
@@ -13,6 +13,6 @@ const postSchema = new Schema(
   }
 );
 
-const Post = mongoose.model({"Post", postSchema});
+const Post = mongoose.model("Post", postSchema);
 
 module.exports = Post;
