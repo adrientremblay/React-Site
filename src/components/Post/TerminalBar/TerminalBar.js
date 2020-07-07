@@ -10,7 +10,7 @@ const terminalBar = (props) => {
         <span className={classes.Circle} />
       </div>
 
-      <div className={classes.Title}>adrientremblay@blog:~</div>
+      <div className={classes.Title}>{props.username}@blog:~</div>
     </div>
   );
 };

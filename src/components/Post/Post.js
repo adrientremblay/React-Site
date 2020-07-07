@@ -5,7 +5,7 @@ import TerminalBar from "./TerminalBar/TerminalBar";
 const post = (props) => {
   return (
     <div className={classes.Post}>
-      <TerminalBar />
+      <TerminalBar username={props.author} />
       <span className={classes.Title}>{props.title}</span>
       <div className={classes.info}>
         <ul>
