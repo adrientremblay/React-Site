@@ -1,29 +1,34 @@
-import React from "react";
+import React, { Component } from "react";
 import Post from "../../../components/Post/Post";
 import axios from "../../../axios";
+import { render } from "@testing-library/react";
 
-const posts = (props) => {
-  let posts = axios.get("/posts").then((posts) => {
-    console.log(posts);
-  });
+class Posts extends Component {
+  state = {
+    posts: [],
+  };
 
-  return (
-    <React.Fragment>
-      <Post
-        title="sample title"
-        author="swagnemite"
-        date="12 aug 2069"
-        desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa eget egestas purus viverra accumsan in nisl nisi scelerisque. Ac turpis egestas sed tempus urna et pharetra. Metus aliquam eleifend mi in nulla posuere sollicitudin aliquam. Nunc mattis enim ut tellus elementum sagittis. Id consectetur purus ut faucibus pulvinar elementum. Id venenatis a condimentum vitae sapien pellentesque. Pretium vulputate sapien nec sagittis. Lorem donec massa sapien faucibus et. Nec feugiat in fermentum posuere urna nec tincidunt. Aenean sed adipiscing diam donec adipiscing tristique risus."
-      ></Post>
+  componentDidMount() {
+    axios.get("/posts").then((request) => {
+      const posts = request.data;
+      this.setState({ posts: posts });
+    });
+  }
 
-      <Post
-        title="sample title"
-        author="swagnemite"
-        date="12 aug 2069"
-        desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa eget egestas purus viverra accumsan in nisl nisi scelerisque. Ac turpis egestas sed tempus urna et pharetra. Metus aliquam eleifend mi in nulla posuere sollicitudin aliquam. Nunc mattis enim ut tellus elementum sagittis. Id consectetur purus ut faucibus pulvinar elementum. Id venenatis a condimentum vitae sapien pellentesque. Pretium vulputate sapien nec sagittis. Lorem donec massa sapien faucibus et. Nec feugiat in fermentum posuere urna nec tincidunt. Aenean sed adipiscing diam donec adipiscing tristique risus."
-      ></Post>
-    </React.Fragment>
-  );
-};
+  render() {
+    let posts = this.state.posts.map((post) => {
+      return (
+        <Post
+          title={post.title}
+          author={post.username}
+          date={post.date}
+          desc={post.description}
+        />
+      );
+    });
 
-export default posts;
+    return <React.Fragment>{posts}</React.Fragment>;
+  }
+}
+
+export default Posts;

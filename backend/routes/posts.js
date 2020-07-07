@@ -9,11 +9,13 @@ router.route("/").get((req, res) => {
 
 router.route("/add").post((req, res) => {
   const username = req.body.username;
+  const title = req.body.title;
   const description = req.body.description;
   const date = Date.parse(req.body.date);
 
   const newPost = new Post({
     username,
+    title,
     description,
     date,
   });
@@ -40,6 +42,7 @@ router.route("/update/:id").post((req, res) => {
   Post.findById(req.params.id)
     .then((post) => {
       post.username = req.body.username;
+      post.title = req.body.title;
       post.description = req.body.description;
       post.date = Date.parse(req.body.date);
 
