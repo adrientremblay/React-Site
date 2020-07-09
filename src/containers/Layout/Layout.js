@@ -4,8 +4,8 @@ import Blog from "../Blog/Blog";
 import Face from "../Face/Face";
 import classes from "./Layout.module.css";
 import NavBar from "../../components/NavBar/NavBar";
-import Resume from "../../components/Resume/Resume";
-import Contact from "../../components/Contact/Contact";
+import Resume from "../Resume/Resume";
+import Contact from "../Contact/Contact";
 
 const layout = (props) => {
   return (
