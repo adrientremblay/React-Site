@@ -8,6 +8,7 @@ const navBar = (props) => {
       <nav>
         <MyNavLink name="Home" to="/" />
         <MyNavLink name="Blog" to="/blog" />
+        <MyNavLink name="Portfolio" to="/portfolio" />
         <MyNavLink name="Skills" to="/skills" />
         <MyNavLink name="Resume" to="/resume" />
         <MyNavLink name="Contact" to="/contact" />

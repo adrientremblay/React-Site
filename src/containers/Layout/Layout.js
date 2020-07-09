@@ -5,6 +5,7 @@ import Face from "../Face/Face";
 import classes from "./Layout.module.css";
 import NavBar from "../../components/NavBar/NavBar";
 import Resume from "../../components/Resume/Resume";
+import Contact from "../../components/Contact/Contact";
 
 const layout = (props) => {
   return (
@@ -15,6 +16,7 @@ const layout = (props) => {
         <Route path="/" exact component={Face} />
         <Route path="/blog" exact component={Blog} />
         <Route path="/resume" exact component={Resume} />
+        <Route path="/contact" exact component={Contact} />
       </div>
     </React.Fragment>
   );
