@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import classes from "./Face.module.css";
-import portait from "./portait.jpg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 class Face extends Component {
   render() {
@@ -20,7 +21,11 @@ class Face extends Component {
           site you can navigate to my Blog and view my Resume.
         </p>
 
-        <img className={classes.Portrait} src={portait} alt="my face"></img>
+        <FontAwesomeIcon
+          onClick={() => window.open("someLink", "_blank")}
+          href="penis"
+          icon={faGithub}
+        />
       </div>
     );
   }
