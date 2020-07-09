@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import classes from "./Face.module.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import IconButton from "../../components/IconButton/IconButton";
 
 class Face extends Component {
   render() {
@@ -21,11 +21,10 @@ class Face extends Component {
           site you can navigate to my Blog and view my Resume.
         </p>
 
-        <FontAwesomeIcon
-          onClick={() => window.open("someLink", "_blank")}
-          href="penis"
+        <IconButton
+          href="https://github.com/adrientremblay"
           icon={faGithub}
-        />
+        ></IconButton>
       </div>
     );
   }
