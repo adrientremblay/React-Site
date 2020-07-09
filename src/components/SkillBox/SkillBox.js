@@ -1,7 +1,7 @@
 import React from "react";
 
 const skillBox = (props) => {
-  let skills = props.skills.map((skill) => <li>skill</li>);
+  let skills = props.skills.map((skill) => <li>{skill}</li>);
 
   return (
     <React.Fragment>

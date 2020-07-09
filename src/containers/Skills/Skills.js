@@ -6,11 +6,45 @@ class Skills extends Component {
     categories: [
       {
         name: "Languages",
-        skills: ["making websites"],
+        skills: [
+          "English",
+          "French",
+          "Java",
+          "Javascript",
+          "Python3",
+          "PHP",
+          "C",
+          "SQL",
+          "Powershell",
+        ],
       },
       {
-        name: "Game Development",
-        skills: ["swagging out", "smoking"],
+        name: "Frameworks, Libraries, and Engines",
+        skills: [
+          "React",
+          "Django",
+          "Flask",
+          "Node",
+          "Bootstrap",
+          "JMonkey3 Game Enginer",
+          "Phaser3",
+          "Selenium",
+          "Plot.ly Dash",
+        ],
+      },
+      {
+        name: "Operating Systems",
+        skills: [
+          "Ubuntu 20",
+          "Arch Linux",
+          "Windows 10",
+          "Mac OSX",
+          "Robot Operating System",
+        ],
+      },
+      {
+        name: "Technologies",
+        skills: ["Git", "Visual Studio Code", "Vim", "Blender", "Arduino"],
       },
     ],
   };
