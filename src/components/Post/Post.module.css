@@ -5,6 +5,7 @@
   font-family: "Roboto Mono", monospace;
   color: white;
   background-color: #2c001e;
+  min-height: 25vh;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
 }
 

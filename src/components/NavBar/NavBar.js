@@ -1,14 +1,16 @@
 import React from "react";
-import NavLink from "./NavLink/NavLink";
+import MyNavLink from "./MyNavLink/MyNavLink";
 import classes from "./NavBar.module.css";
 
 const navBar = (props) => {
   return (
     <header className={classes.NavBar}>
       <nav>
-        <NavLink to="/">Home</NavLink>
-        <NavLink to="/blog">Blog</NavLink>
-        <NavLink to="/resume">Resume</NavLink>
+        <MyNavLink name="Home" to="/" />
+        <MyNavLink name="Blog" to="/blog" />
+        <MyNavLink name="Skills" to="/skills" />
+        <MyNavLink name="Resume" to="/resume" />
+        <MyNavLink name="Contact" to="/contact" />
       </nav>
     </header>
   );
