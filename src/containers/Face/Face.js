@@ -16,8 +16,9 @@ class Face extends Component {
         </p>
         <p>
           My interests range from web development, to game development, to
-          operating systems.
+          operating systems, to anything computer science.
         </p>
+        <p>I'm also an avid runner, reader, and singer.</p>
         <p>See my:</p>
 
         <IconButton href="https://github.com/adrientremblay" icon={faGithub} />
