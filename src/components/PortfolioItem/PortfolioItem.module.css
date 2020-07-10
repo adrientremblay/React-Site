@@ -1,0 +1,9 @@
+.Image {
+  max-height: 256px;
+  display: inline-block;
+  float: left;
+}
+
+.Skills {
+  display: inline-block;
+}

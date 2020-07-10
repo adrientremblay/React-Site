@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Title from "../../components/Title/Title";
 import SkillBox from "../../components/SkillBox/SkillBox";
 
 class Skills extends Component {
@@ -71,7 +72,12 @@ class Skills extends Component {
       <SkillBox name={category.name} skills={category.skills} />
     ));
 
-    return <React.Fragment>{categories}</React.Fragment>;
+    return (
+      <React.Fragment>
+        <Title>Skills</Title>
+        {categories}
+      </React.Fragment>
+    );
   }
 }
 
