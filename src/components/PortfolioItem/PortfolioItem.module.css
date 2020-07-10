@@ -1,9 +1,13 @@
 .Image {
-  max-height: 256px;
-  display: inline-block;
+  max-height: 150px;
+  display: block;
   float: left;
 }
 
 .Skills {
   display: inline-block;
+}
+
+.Item {
+  /* background-color: red; */
 }

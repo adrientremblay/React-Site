@@ -4,7 +4,7 @@ import classes from "./PortfolioItem.module.css";
 const portfolioItem = (props) => {
   return (
     <div className={classes.Item}>
-      <h3>{props.title}</h3>
+      <h2>{props.title}</h2>
       <p>{props.description}</p>
       <img
         className={classes.Image}
@@ -12,6 +12,7 @@ const portfolioItem = (props) => {
       ></img>
       <div className={classes.Skills}>
         <ul>
+          <h3>Technologies Used</h3>
           {props.skills.map((skill) => (
             <li>{skill}</li>
           ))}

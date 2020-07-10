@@ -23,7 +23,14 @@ class Portfolio extends Component {
         title: "Old Personal Website",
         description:
           "A blog website I made using the Django Python framework and Mezzanine CMS.",
-        skills: ["stuff"],
+        skills: [
+          "Django",
+          "Python",
+          "Mezzanine CMS",
+          "PostgreSQL",
+          "Bootstrap",
+          "Heroku",
+        ],
         imageName: "p2.jpg",
       },
     ],
