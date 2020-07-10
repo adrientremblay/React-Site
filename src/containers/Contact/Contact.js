@@ -1,9 +1,10 @@
 import React from "react";
+import Title from "../../components/Title/Title";
 
 const contact = (props) => {
   return (
     <div>
-      <h1>Contact me</h1>
+      <Title>Contact me</Title>
       <p>
         For business/job inquires email me at{" "}
         <a href="mailto:adrien@adrientremblay.com">adrien@adrientremblay.com</a>

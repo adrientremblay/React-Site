@@ -5,7 +5,7 @@ const skillBox = (props) => {
 
   return (
     <React.Fragment>
-      <p>{props.name}</p>
+      <h3>{props.name}</h3>
       <ul>{skills}</ul>
     </React.Fragment>
   );
