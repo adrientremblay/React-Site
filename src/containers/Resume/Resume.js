@@ -11,7 +11,8 @@ const resume = (props) => {
 
       <SizeMe
         render={({ size }) => (
-          <div style={{ marginLeft: "-5%" }}>
+          // where the hell does 7% come from???
+          <div style={{ marginLeft: "-7%" }}>
             <Document file={"Resume2020.pdf"}>
               <Page width={size.width} pageNumber={1} />
             </Document>

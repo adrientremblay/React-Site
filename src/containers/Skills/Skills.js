@@ -46,6 +46,16 @@ class Skills extends Component {
         name: "Technologies",
         skills: ["Git", "Visual Studio Code", "Vim", "Blender", "Arduino"],
       },
+      {
+        name: "Soft Skills",
+        skills: [
+          "Leadership",
+          "Idea Exchange",
+          "Optimism",
+          "Self-management",
+          "Respect",
+        ],
+      },
     ],
   };
 
