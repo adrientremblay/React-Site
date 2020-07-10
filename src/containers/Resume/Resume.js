@@ -9,10 +9,12 @@ const resume = (props) => {
     <React.Fragment>
       <Title>Resume</Title>
 
+      <a href="Resume2020.pdf">Download me!</a>
+
       <SizeMe
         render={({ size }) => (
           // where the hell does 7% come from???
-          <div style={{ marginLeft: "-7%" }}>
+          <div style={{ marginTop: "10px", marginLeft: "-7%" }}>
             <Document file={"Resume2020.pdf"}>
               <Page width={size.width} pageNumber={1} />
             </Document>
