@@ -6,7 +6,7 @@ const contact = (props) => {
     <div>
       <Title>Contact me</Title>
       <p>
-        For business/job inquires email me at{" "}
+        For business inquires email me at{" "}
         <a href="mailto:adrien@adrientremblay.com">adrien@adrientremblay.com</a>
         .
       </p>

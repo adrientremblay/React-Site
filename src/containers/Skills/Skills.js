@@ -26,10 +26,10 @@ class Skills extends Component {
           "Flask",
           "Node",
           "Bootstrap",
-          "JMonkey3 Game Enginer",
-          "Phaser3",
           "Selenium",
           "Plot.ly Dash",
+          "JMonkey3 Game Engine",
+          "Phaser3 Game Library",
         ],
       },
       {
@@ -44,7 +44,14 @@ class Skills extends Component {
       },
       {
         name: "Technologies",
-        skills: ["Git", "Visual Studio Code", "Vim", "Blender", "Arduino"],
+        skills: [
+          "Git",
+          "Bash",
+          "Visual Studio Code",
+          "Vim",
+          "Blender",
+          "Arduino",
+        ],
       },
       {
         name: "Soft Skills",
