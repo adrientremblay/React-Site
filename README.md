@@ -72,3 +72,4 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 - http://www.pascalvangemert.nl/#/abilities
 - https://pradyuman7.github.io/
 - https://www.youtube.com/watch?v=7CqJlxBYj-M&t=1374s
+- https://blog.jessfraz.com/
