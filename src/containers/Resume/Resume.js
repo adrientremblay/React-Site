@@ -9,14 +9,15 @@ const resume = (props) => {
     <React.Fragment>
       <Title>Resume</Title>
 
-      <a href="Resume2020.pdf">Download me!</a>
-
+      <p>
+        <a href="Resume2020.pdf">Download me!</a>
+      </p>
       <SizeMe
         render={({ size }) => (
           // where the hell does 7% come from???
-          <div style={{ marginTop: "10px", marginLeft: "-7%" }}>
+          <div style={{ marginTop: "25px" }}>
             <Document file={"Resume2020.pdf"}>
-              <Page width={size.width} pageNumber={1} />
+              <Page width={0.93 * size.width} pageNumber={1} />
             </Document>
           </div>
         )}
