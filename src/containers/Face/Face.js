@@ -1,7 +1,5 @@
 import React, { Component } from "react";
 import classes from "./Face.module.css";
-import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { faAt } from "@fortawesome/free-solid-svg-icons";
 import IconButton from "../../components/IconButton/IconButton";
 import Title from "../../components/Title/Title";
 
@@ -21,12 +19,15 @@ class Face extends Component {
         <p>I'm also an avid runner, reader, and singer.</p>
         <p>See my</p>
 
-        <IconButton href="https://github.com/adrientremblay" icon={faGithub} />
+        <IconButton
+          href="https://github.com/adrientremblay"
+          icon={["fab", "github"]}
+        />
         <IconButton
           href="https://www.linkedin.com/in/adrientremblay/"
-          icon={faLinkedin}
+          icon={["fab", "linkedin"]}
         />
-        <IconButton href="mailto:adrien@adrientremblay.com" icon={faAt} />
+        <IconButton href="mailto:adrien@adrientremblay.com" icon="at" />
       </div>
     );
   }
