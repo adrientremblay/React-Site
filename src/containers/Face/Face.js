@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import classes from "./Face.module.css";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faAt } from "@fortawesome/free-solid-svg-icons";
 import IconButton from "../../components/IconButton/IconButton";
 
 class Face extends Component {
@@ -13,18 +14,17 @@ class Face extends Component {
           University, Montreal, Canada
         </p>
         <p>
-          I am passionate about web development, app development, operating
-          systems, and softare engineering
+          My interests range from web development, to game development, to
+          operating systems.
         </p>
-        <p>
-          This is my personal webiste I made using the React framework. On this
-          site you can navigate to my Blog and view my Resume.
-        </p>
+        <p>See my:</p>
 
+        <IconButton href="https://github.com/adrientremblay" icon={faGithub} />
         <IconButton
-          href="https://github.com/adrientremblay"
-          icon={faGithub}
-        ></IconButton>
+          href="https://www.linkedin.com/in/adrientremblay/"
+          icon={faLinkedin}
+        />
+        <IconButton href="mailto:adrien@adrientremblay.com" icon={faAt} />
       </div>
     );
   }

@@ -6,6 +6,8 @@ const iconButton = (props) => {
     <FontAwesomeIcon
       onClick={() => window.open(props.href, "_blank")}
       icon={props.icon}
+      size="lg"
+      style={{ paddingRight: "10px", cursor: "pointer" }}
     />
   );
 };
