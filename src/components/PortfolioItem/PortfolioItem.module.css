@@ -5,9 +5,21 @@
 }
 
 .Skills {
+  max-height: 150px;
   display: inline-block;
 }
 
+.Skills ul {
+  columns: 3;
+  -webkit-columns: 3;
+  -moz-columns: 3;
+}
+
+.Skills ul li {
+  padding-right: 50px;
+}
+
 .Item {
+  min-height: 250px;
   /* background-color: red; */
 }

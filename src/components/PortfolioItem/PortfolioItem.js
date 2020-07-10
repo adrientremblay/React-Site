@@ -11,8 +11,8 @@ const portfolioItem = (props) => {
         src={require("../../../public/images/" + props.imgName)}
       ></img>
       <div className={classes.Skills}>
+        <h3 style={{ marginLeft: "20px" }}>Technologies Used</h3>
         <ul>
-          <h3>Technologies Used</h3>
           {props.skills.map((skill) => (
             <li>{skill}</li>
           ))}
