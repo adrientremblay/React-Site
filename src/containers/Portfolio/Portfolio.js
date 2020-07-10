@@ -33,6 +33,13 @@ class Portfolio extends Component {
         ],
         imageName: "p2.jpg",
       },
+      {
+        title: "CRC Robotics Simulation",
+        description:
+          "A 3D Java simulation made for the 'Canadian Robotics Competitions' organization for the 2020 'Jump' game.",
+        skills: ["JMonkey3", "Java", "NiftyGUI", "Blender"],
+        imageName: "p3.png",
+      },
     ],
   };
 

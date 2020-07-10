@@ -1,7 +1,9 @@
 .Image {
-  max-height: 150px;
+  /* max-height: 150px; */
   display: block;
   float: left;
+  width: 250px;
+  border: 2px solid white;
 }
 
 .Skills {
