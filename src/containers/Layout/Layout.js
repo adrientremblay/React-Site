@@ -11,7 +11,7 @@ import Portfolio from "../Portfolio/Portfolio";
 
 const layout = (props) => {
   return (
-    <React.Fragment>
+    <div style={{ paddingBottom: "5vh" }}>
       <NavBar />
 
       <div className={classes.Main}>
@@ -22,7 +22,7 @@ const layout = (props) => {
         <Route path="/skills" exact component={Skills} />
         <Route path="/portfolio" exact component={Portfolio} />
       </div>
-    </React.Fragment>
+    </div>
   );
 };
 
