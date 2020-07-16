@@ -69,7 +69,11 @@ class Skills extends Component {
 
   render() {
     let categories = this.state.categories.map((category) => (
-      <SkillBox name={category.name} skills={category.skills} />
+      <SkillBox
+        key={category.name}
+        name={category.name}
+        skills={category.skills}
+      />
     ));
 
     return (
