@@ -8,11 +8,11 @@ const post = (props) => {
     // <Draggable>
     <div className={classes.Post}>
       <TerminalBar username={props.author} />
-      <span className={classes.Title}>{props.title}</span>
       <div className={classes.info}>
         <ul>
+          <li>Title: {props.title}</li>
           <li>Date: {props.date}</li>
-          <li>Description: {props.desc}...</li>
+          <li>Description: {props.desc}</li>
         </ul>
       </div>
     </div>
