@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import classes from "./Face.module.css";
+// import classes from "./Face.module.css";
 import IconButton from "../../components/IconButton/IconButton";
 import Title from "../../components/Title/Title";
 

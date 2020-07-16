@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Title from "../../components/Title/Title";
-import classes from "./Portfolio.module.css";
+// import classes from "./Portfolio.module.css";
 import PortfolioItem from "../../components/PortfolioItem/PortfolioItem";
 
 class Portfolio extends Component {
