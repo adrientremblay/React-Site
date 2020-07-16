@@ -46,6 +46,7 @@ class Portfolio extends Component {
   render() {
     let projects = this.state.projects.map((project) => (
       <PortfolioItem
+        key={project.title}
         title={project.title}
         description={project.description}
         skills={project.skills}

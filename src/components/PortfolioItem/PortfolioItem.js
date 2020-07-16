@@ -15,7 +15,7 @@ const portfolioItem = (props) => {
         <h3 style={{ marginLeft: "20px" }}>Technologies Used</h3>
         <ul>
           {props.skills.map((skill) => (
-            <li>{skill}</li>
+            <li key={skill}>{skill}</li>
           ))}
         </ul>
       </div>
