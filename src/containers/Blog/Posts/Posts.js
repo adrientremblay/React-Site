@@ -18,6 +18,7 @@ class Posts extends Component {
     let posts = this.state.posts.map((post) => {
       return (
         <Post
+          key={post.date}
           title={post.title}
           author={post.username}
           date={post.date}
