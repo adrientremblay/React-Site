@@ -8,6 +8,7 @@ class Blog extends Component {
     return (
       <div className="blog">
         <Title>Adrien's Blog</Title>
+        {/* <p>Click a post to read more</p> */}
 
         <Posts />
       </div>
