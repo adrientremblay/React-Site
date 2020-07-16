@@ -9,6 +9,7 @@ const portfolioItem = (props) => {
       <img
         className={classes.Image}
         src={require("../../../public/images/" + props.imgName)}
+        alt={props.title}
       ></img>
       <div className={classes.Skills}>
         <h3 style={{ marginLeft: "20px" }}>Technologies Used</h3>

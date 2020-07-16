@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import Post from "../../../components/Post/Post";
 import axios from "../../../axios";
-import { render } from "@testing-library/react";
 
 class Posts extends Component {
   state = {
