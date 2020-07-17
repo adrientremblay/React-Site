@@ -23,8 +23,8 @@
     "react-sizeme": "^2.6.12"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "(cd backend && nodemon server) & react-scripts start",
+    "build": "(cd backend && nodemon server) & react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
