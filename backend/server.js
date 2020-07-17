@@ -1,6 +1,7 @@
 const express = require("express");
 const cors = require("cors");
 const mongoose = require("mongoose");
+const serverless = require("serverless-http");
 
 require("dotenv").config({ path: __dirname + "/.env.local" });
 
@@ -20,9 +21,11 @@ connection.once("open", () => {
 const postsRouter = require("./routes/posts");
 const usersRouter = require("./routes/users");
 
-app.use("/users", usersRouter);
-app.use("/posts", postsRouter);
+app.use("/.netlify/functions/users", usersRouter);
+app.use("/.netlify/functions/posts", postsRouter);
 
 app.listen(port, () => {
   console.log(`Server is running on port: ${port}`);
 });
+
+module.exports.handler = serverless(app);
