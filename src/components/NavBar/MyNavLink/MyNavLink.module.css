@@ -3,12 +3,10 @@
   width: 100px;
   height: 50px;
   line-height: 50px;
-  background-color: white;
-  color: black;
+  color: white;
   text-decoration: none;
   font-weight: bold;
   font-size: large;
-  border-bottom: 1px solid black;
 }
 
 .LinkBox:hover,
@@ -17,5 +15,5 @@
 }
 
 .Active .LinkBox {
-  background-color: #e3e1e1;
+  text-decoration: underline;
 }

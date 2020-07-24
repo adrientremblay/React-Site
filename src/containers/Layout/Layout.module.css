@@ -1,11 +1,9 @@
 .Main {
-  width: 75%;
-  margin-left: 5%;
   padding-left: 5%;
-  margin-top: 5vh;
-  padding-bottom: 5vh;
+  padding-top: 2%;
   background-color: black;
-  border: 2px dashed white;
   color: white;
   min-height: 85vh;
+  width: 80%;
+  /* border: 2px solid red; */
 }
