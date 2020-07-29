@@ -11,6 +11,7 @@ class Posts extends Component {
     axios.get("/posts").then((request) => {
       const posts = request.data;
       this.setState({ posts: posts });
+      console.log(posts);
     });
   }
 
