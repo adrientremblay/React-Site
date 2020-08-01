@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Post from "../../../components/Post/Post";
-import axios from "../../../axios";
+import axios from "axios";
 
 class Posts extends Component {
   state = {
@@ -8,10 +8,9 @@ class Posts extends Component {
   };
 
   componentDidMount() {
-    axios.get("/posts").then((request) => {
+    axios.get("/api/posts").then((request) => {
       const posts = request.data;
       this.setState({ posts: posts });
-      console.log(posts);
     });
   }
 

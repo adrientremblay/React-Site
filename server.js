@@ -20,8 +20,17 @@ connection.once("open", () => {
 });
 
 // Routes
-const postsRouter = require("./routes/posts");
-app.use("/posts", postsRouter);
+const postsRouter = require("./routes/api/posts");
+app.use("/api/posts", postsRouter);
+
+// Serve static assets if in production
+if (process.env.NODE_ENV == "production") {
+  // Set static folder
+  app.use(express.static("client/build"));
+  app.get("*", (req, res) => {
+    res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
+  });
+}
 
 app.listen(port, () => {
   console.log(`Server is running on port: ${port}`);
