@@ -1,10 +1,17 @@
 import React from "react";
-import MyNavLink from "./MyNavLink/MyNavLink";
-import classes from "./NavBar.module.css";
+import styled from "styled-components";
+import MyNavLink from "./MyNavLink";
+
+const Container = styled.div`
+  top: 5vh;
+  right: 2%;
+  width: 10%;
+  position: fixed;
+`;
 
 const navBar = (props) => {
   return (
-    <header className={classes.NavBar}>
+    <Container>
       <nav>
         <MyNavLink name="Home" to="/" />
         <MyNavLink name="Blog" to="/blog" />
@@ -13,7 +20,7 @@ const navBar = (props) => {
         <MyNavLink name="Resume" to="/resume" />
         <MyNavLink name="Contact" to="/contact" />
       </nav>
-    </header>
+    </Container>
   );
 };
 

@@ -1,7 +1,7 @@
 import React from "react";
-import Title from "../../components/Title/Title";
 import { Document, Page, pdfjs } from "react-pdf";
 import { SizeMe } from "react-sizeme";
+import Title from "../Title";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
 const resume = (props) => {

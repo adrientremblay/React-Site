@@ -1,9 +1,8 @@
 import React, { Component } from "react";
 import Typist from "react-typist";
 import "react-typist/dist/Typist.css";
-import classes from "./Face.module.css";
-import IconButton from "../../components/IconButton/IconButton";
-import Title from "../../components/Title/Title";
+import IconButton from "./IconButton";
+import Title from "../Title";
 
 class Face extends Component {
   render() {

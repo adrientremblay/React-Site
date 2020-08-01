@@ -1,27 +1,36 @@
 import React from "react";
 import { Route } from "react-router-dom";
-import Blog from "../Blog/Blog";
-import Face from "../Face/Face";
-import classes from "./Layout.module.css";
-import NavBar from "../../components/NavBar/NavBar";
-import Resume from "../Resume/Resume";
-import Contact from "../Contact/Contact";
-import Skills from "../Skills/Skills";
-import Portfolio from "../Portfolio/Portfolio";
+import styled from "styled-components";
+import Blog from "./blog/Blog";
+import Face from "./face/Face";
+import NavBar from "./NavBar";
+import Resume from "./resume/Resume";
+import Contact from "./contact/Contact";
+import Skills from "./skills/Skills";
+import Portfolio from "./portfolio/Portfolio";
+
+const Container = styled.div`
+  padding-left: 5%;
+  padding-top: 2%;
+  background-color: black;
+  color: white;
+  min-height: 85vh;
+  width: 80%;
+`;
 
 const layout = (props) => {
   return (
     <div style={{ paddingBottom: "5vh" }}>
       <NavBar />
 
-      <div className={classes.Main}>
+      <Container>
         <Route path="/" exact component={Face} />
         <Route path="/blog" exact component={Blog} />
         <Route path="/resume" exact component={Resume} />
         <Route path="/contact" exact component={Contact} />
         <Route path="/skills" exact component={Skills} />
         <Route path="/portfolio" exact component={Portfolio} />
-      </div>
+      </Container>
     </div>
   );
 };

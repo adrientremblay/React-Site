@@ -1,7 +1,6 @@
 import React, { Component } from "react";
-import Title from "../../components/Title/Title";
-// import classes from "./Portfolio.module.css";
-import PortfolioItem from "../../components/PortfolioItem/PortfolioItem";
+import Title from "../Title";
+import PortfolioItem from "./PortfolioItem";
 
 class Portfolio extends Component {
   state = {

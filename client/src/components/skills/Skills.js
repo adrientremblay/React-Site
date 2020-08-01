@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import Title from "../../components/Title/Title";
-import SkillBox from "../../components/SkillBox/SkillBox";
+import Title from "../Title";
+import SkillBox from "./SkillBox";
 
 class Skills extends Component {
   state = {
