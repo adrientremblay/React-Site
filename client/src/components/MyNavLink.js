@@ -2,8 +2,12 @@ import React from "react";
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
 
-const LinkBox = styled.div`
-  text-align: center;
+const LinkBox = styled.div``;
+
+const activeClassName = "nav-item-active";
+
+const StyledLink = styled(NavLink).attrs({ activeClassName })`
+  text-align: right;
   width: 100px;
   height: 50px;
   line-height: 50px;
@@ -12,26 +16,21 @@ const LinkBox = styled.div`
   font-weight: bold;
   font-size: large;
 
-  :hover,
+  &:hover,
   :active {
     color: red;
   }
 
-  .Active {
+  &.${activeClassName} {
     text-decoration: underline;
   }
 `;
 
 const myNavLink = (props) => {
   return (
-    <NavLink
-      style={{ textDecoration: "none" }}
-      exact
-      activeClassName="Active"
-      to={props.to}
-    >
+    <StyledLink exact to={props.to}>
       <LinkBox>{props.name}</LinkBox>
-    </NavLink>
+    </StyledLink>
   );
 };
 

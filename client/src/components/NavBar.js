@@ -7,6 +7,8 @@ const Container = styled.div`
   right: 2%;
   width: 10%;
   position: fixed;
+  display: flex;
+  flex-direction: column;
 `;
 
 const navBar = (props) => {
