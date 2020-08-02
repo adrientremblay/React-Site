@@ -9,8 +9,7 @@ class Blog extends Component {
       <div className="blog">
         <Title>Adrien's Blog</Title>
         <Posts />
-
-        <PostEditor />
+        <PostEditor></PostEditor>
       </div>
     );
   }

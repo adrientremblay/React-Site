@@ -1,44 +1,36 @@
 import React, { Component } from "react";
-import { Editor, EditorState, RichUtils } from "draft-js";
-import "draft-js/dist/Draft.css";
+import { EditorState, convertToRaw } from "draft-js";
+import { Editor } from "react-draft-wysiwyg";
+import draftToHtml from "draftjs-to-html";
+import htmlToDraft from "html-to-draftjs";
 import "react-draft-wysiwyg/dist/react-draft-wysiwyg.css";
 
-class PostEditor extends Component {
-  constructor(props) {
-    super(props);
-    this.state = { editorState: EditorState.createEmpty() };
-    this.onChange = (editorState) => this.setState({ editorState });
-    this.handleKeyCommand = this.handleKeyCommand.bind(this);
-  }
+export default class PostEditor extends Component {
+  state = {
+    editorState: EditorState.createEmpty(),
+  };
 
-  handleKeyCommand(command, editorState) {
-    const newState = RichUtils.handleKeyCommand(editorState, command);
-
-    if (newState) {
-      this.onChange(newState);
-      return "handled";
-    }
-
-    return "not-handled";
-  }
-
-  _onBoldClick() {
-    this.onChange(RichUtils.toggleInlineStyle(this.state.editorState, "BOLD"));
-  }
+  onEditorStateChange = (editorState) => {
+    this.setState({
+      editorState,
+    });
+  };
 
   render() {
+    const { editorState } = this.state;
     return (
       <div>
-        <button onClick={this._onBoldClick.bind(this)}>Bold</button>
         <Editor
-          editorState={this.state.editorState}
-          onChange={this.onChange}
-          handleKeyCommand={this.handleKeyCommand}
-          placeholder="The message goes here..."
+          editorState={editorState}
+          wrapperClassName="demo-wrapper"
+          editorClassName="demo-editor"
+          onEditorStateChange={this.onEditorStateChange}
+        />
+        <textarea
+          disabled
+          value={draftToHtml(convertToRaw(editorState.getCurrentContent()))}
         />
       </div>
     );
   }
 }
-
-export default PostEditor;
