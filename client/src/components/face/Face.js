@@ -1,23 +1,25 @@
 import React, { Component } from "react";
 import Typist from "react-typist";
 import "react-typist/dist/Typist.css";
+import { CSSTransition } from "react-transition-group";
 import IconButton from "./IconButton";
 import Title from "../Title";
+import "./Face.css";
 
 class Face extends Component {
   state = {
     showIcons: false,
   };
 
+  turnIconsOn = () => {
+    this.setState({ showIcons: true });
+  };
+
   render() {
     return (
       <div>
         <Title>Hi i'm Adrien</Title>
-        <Typist
-          onTypingDone={() => {
-            this.setState({ showIcons: true });
-          }}
-        >
+        <Typist avgTypingDelay={40} onTypingDone={this.turnIconsOn}>
           <br />
           <br />
           <Typist.Delay ms={3000} />
@@ -31,7 +33,12 @@ class Face extends Component {
           <hr />
         </Typist>
 
-        {this.state.showIcons ? (
+        <CSSTransition
+          in={this.state.showIcons}
+          timeout={1000}
+          classNames="icons"
+          unmountOnExit
+        >
           <div>
             <IconButton
               href="https://github.com/adrientremblay"
@@ -43,7 +50,7 @@ class Face extends Component {
             />
             <IconButton href="mailto:adrien@adrientremblay.com" icon="at" />
           </div>
-        ) : null}
+        </CSSTransition>
       </div>
     );
   }

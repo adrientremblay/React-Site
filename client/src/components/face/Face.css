@@ -1,0 +1,14 @@
+.icons-enter {
+  opacity: 0;
+}
+.icons-enter-active {
+  opacity: 1;
+  transition: opacity 1000ms;
+}
+.icons-exit {
+  opacity: 1;
+}
+.icons-exit-active {
+  opacity: 0;
+  transition: opacity 1000ms;
+}
