@@ -23,13 +23,18 @@ class Face extends Component {
           <br />
           <br />
           <Typist.Delay ms={3000} />
-          I am a Software Engineering student currently studying at Concordia
-          University, Montreal, Canada
+          I study Software Engineering at Concordia University in Montreal,
+          Canada.
           <br />
           <br />
-          My interests range from web development, to game development, to
-          operating systems, to anything computer science. I'm also an avid
-          runner, reader, and singer. See my
+          I'm interested in web development
+          <Typist.Backspace count={15} delay={500} />
+          game development
+          <Typist.Backspace count={16} delay={300} />
+          operating systems
+          <Typist.Backspace count={17} delay={300} />
+          anything computer science :) I'm also an avid runner, reader, and
+          singer. See my...
           <hr />
         </Typist>
 
@@ -39,7 +44,7 @@ class Face extends Component {
           classNames="icons"
           unmountOnExit
         >
-          <div>
+          <div style={{ marginTop: "2rem" }}>
             <IconButton
               href="https://github.com/adrientremblay"
               icon={["fab", "github"]}
