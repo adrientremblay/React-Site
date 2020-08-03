@@ -23,7 +23,10 @@ const post = (props) => {
         <ul>
           <li>Title: {props.title}</li>
           <li>Date: {props.date}</li>
-          <li>Description: {props.desc}</li>
+          <li>
+            Description:
+            <div dangerouslySetInnerHTML={{ __html: `${props.desc}` }} />
+          </li>
         </ul>
       </div>
     </Container>

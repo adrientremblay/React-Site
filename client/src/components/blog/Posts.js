@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Post from "./Post";
 import axios from "axios";
+import draftToHtml from "draftjs-to-html";
 
 class Posts extends Component {
   state = {
@@ -22,7 +23,7 @@ class Posts extends Component {
           title={post.title}
           author={post.username}
           date={post.date}
-          desc={post.description}
+          desc={draftToHtml(JSON.parse(post.description))}
         />
       );
     });
