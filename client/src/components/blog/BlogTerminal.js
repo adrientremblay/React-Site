@@ -61,7 +61,7 @@ class BlogTerminal extends Component {
       <Terminal
         ref={this.terminal}
         commands={this.commands}
-        welcomeMessage={"Welcome to the React terminal!"}
+        // welcomeMessage={"Welcome to the React terminal!"}
         promptLabel={"user@adriensblog:~$"}
         dangerMode={true}
       />

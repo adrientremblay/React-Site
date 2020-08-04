@@ -9,8 +9,12 @@ class Blog extends Component {
     return (
       <div className="blog">
         <Title>Adrien's Blog</Title>
-        {/* <Posts />
-        <PostEditor></PostEditor> */}
+        <p>
+          You're gonna have to figure out this <i>weird terminal thing</i> to
+          see my posts...
+        </p>
+        {/* <Posts /> */}
+        {/* <PostEditor></PostEditor> */}
         <BlogTerminal />
       </div>
     );
