@@ -1,7 +1,18 @@
 import React, { Component } from "react";
+import styled from "styled-components";
 import Terminal from "react-console-emulator";
 import axios from "axios";
 import draftToHtml from "draftjs-to-html";
+
+const StyledTerminal = styled(Terminal)`
+  .promptLabel {
+    color: #ff3333 !important;
+  }
+
+  strong {
+    color: #ff3333 !important;
+  }
+`;
 
 class BlogTerminal extends Component {
   constructor(props) {
@@ -58,7 +69,9 @@ class BlogTerminal extends Component {
 
   render() {
     return (
-      <Terminal
+      <StyledTerminal
+        promptLabelClassName="promptLabel"
+        messageClassName="message"
         ref={this.terminal}
         commands={this.commands}
         // welcomeMessage={"Welcome to the React terminal!"}
