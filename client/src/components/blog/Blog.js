@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import Posts from "./Posts";
 import Title from "../Title";
 import PostEditor from "./PostEditor";
 import BlogTerminal from "./BlogTerminal";
@@ -13,7 +12,6 @@ class Blog extends Component {
           You're gonna have to figure out this <i>weird terminal thing</i> to
           see my posts...
         </p>
-        {/* <Posts /> */}
         {/* <PostEditor></PostEditor> */}
         <BlogTerminal />
       </div>
