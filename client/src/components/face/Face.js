@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Typist from "react-typist";
 import "react-typist/dist/Typist.css";
 import { CSSTransition } from "react-transition-group";
-import IconButton from "./IconButton";
+import IconButton from "../IconButton";
 import Title from "../Title";
 import "./Face.css";
 

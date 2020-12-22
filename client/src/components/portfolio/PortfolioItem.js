@@ -1,8 +1,10 @@
 import React from "react";
 import styled from "styled-components";
+import IconButton from "../IconButton";
 
 const Container = styled.div`
   min-height: 250px;
+  margin-bottom: 50px;
 `;
 
 const Image = styled.img`
@@ -27,6 +29,12 @@ const Skills = styled.div`
   }
 `;
 
+const GitHubBox = styled.div`
+  float: left;
+  clear: left;
+  padding-top: 15px;
+`;
+
 const portfolioItem = (props) => {
   return (
     <Container>
@@ -36,6 +44,10 @@ const portfolioItem = (props) => {
         src={require("../../../public/images/" + props.imgName)}
         alt={props.title}
       ></Image>
+      <GitHubBox>
+        <span>GitHub:</span>
+        <IconButton href={props.url} icon={["fab", "github"]} />
+      </GitHubBox>
       <Skills>
         <h3 style={{ marginLeft: "20px" }}>Technologies Used</h3>
         <ul>

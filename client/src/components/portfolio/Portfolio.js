@@ -50,6 +50,7 @@ class Portfolio extends Component {
         description={project.description}
         skills={project.skills}
         imgName={project.imageName}
+        url="www.swag.com"
       />
     ));
 
