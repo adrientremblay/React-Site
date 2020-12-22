@@ -15,6 +15,8 @@ class Skills extends Component {
           "Javascript",
           "Rust",
           "C",
+          "HTML",
+          "CSS",
           "PHP",
           "Lisp",
           "Prolog",
@@ -33,8 +35,8 @@ class Skills extends Component {
           "Bootstrap",
           "Selenium",
           "Plot.ly Dash",
-          "JMonkey3 Game Engine",
-          "Phaser3 Game Library",
+          "JMonkey3",
+          "Phaser3",
         ],
       },
       {
@@ -47,16 +49,12 @@ class Skills extends Component {
           "Arduino",
           "SQL",
           "MongoDB",
-          "Robot Operating System",
+          "Robot Operating System (ROS)",
         ],
       },
       {
         name: "Operating Systems",
-        skills: [
-          "Linux (i use arch btw)",
-          "Windows 10",
-          "Mac OSX",
-        ],
+        skills: ["Linux (i use arch btw)", "Windows 10", "Mac OSX"],
       },
       {
         name: "Soft Skills",
