@@ -3,12 +3,11 @@ import styled from "styled-components";
 import MyNavLink from "./MyNavLink";
 
 const Container = styled.div`
-  top: 5vh;
-  right: 2%;
-  width: 10%;
-  position: fixed;
   display: flex;
   flex-direction: column;
+  margin-right: 2%;
+  margin-top: 5vh;
+  float: right;
 `;
 
 const navBar = (props) => {
