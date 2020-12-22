@@ -17,6 +17,7 @@ class Portfolio extends Component {
           "Node.js",
         ],
         imageName: "p1.jpeg",
+        url: "https://github.com/adrientremblay/React-Site",
       },
       {
         title: "Old Personal Website",
@@ -31,13 +32,15 @@ class Portfolio extends Component {
           "Heroku",
         ],
         imageName: "p2.jpg",
+        url: "https://github.com/adrientremblay/personal-website",
       },
       {
         title: "CRC Robotics Simulation",
         description:
-          "A 3D Java simulation made for the 'Canadian Robotics Competitions' organization for the 2020 'Jump' game.",
+          "A 3D Java simulation distributed to teams of the 'Canadian Robotics Competitions' organization for the 2020 'Flip' competition.",
         skills: ["JMonkey3", "Java", "NiftyGUI", "Blender"],
         imageName: "p3.png",
+        url: "https://github.com/adrientremblay/CRC-Robotics-Simulation",
       },
     ],
   };
@@ -50,7 +53,7 @@ class Portfolio extends Component {
         description={project.description}
         skills={project.skills}
         imgName={project.imageName}
-        url="www.swag.com"
+        url={project.url}
       />
     ));
 
