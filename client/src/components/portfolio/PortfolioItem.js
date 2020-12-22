@@ -5,6 +5,7 @@ import IconButton from "../IconButton";
 const Container = styled.div`
   min-height: 250px;
   margin-bottom: 50px;
+  overflow: auto;
 `;
 
 const Image = styled.img`

@@ -42,6 +42,14 @@ class Portfolio extends Component {
         imageName: "p3.png",
         url: "https://github.com/adrientremblay/CRC-Robotics-Simulation",
       },
+      {
+        title: "2D Gladiator Game",
+        description:
+          "A small 2D platformer-fighting game made using the Phaser3 game framework.",
+        skills: ["Phaser3", "Node", "Javascript"],
+        imageName: "p4.png",
+        url: "https://github.com/adrientremblay/GladiatorGame",
+      },
     ],
   };
 
