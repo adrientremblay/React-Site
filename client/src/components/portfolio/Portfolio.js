@@ -6,6 +6,13 @@ class Portfolio extends Component {
   state = {
     projects: [
       {
+        title: "Rusty Chip (WIP)",
+        description: "A Chip-8 emulator in Rust.  A work in progress.",
+        skills: ["Rust"],
+        imageName: "p5.jpg",
+        url: "https://github.com/MartensCedric/rusty-chip",
+      },
+      {
         title: "This website",
         description: "Porfolio and blog personal website made using React.",
         skills: [
