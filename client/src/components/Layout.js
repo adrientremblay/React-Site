@@ -12,10 +12,9 @@ import Portfolio from "./portfolio/Portfolio";
 const Container = styled.div`
   padding-left: 5%;
   padding-top: 2%;
-  background-color: black;
-  color: white;
   min-height: 85vh;
   width: 80%;
+  z-index: 100;
 `;
 
 const layout = (props) => {

@@ -4,7 +4,7 @@ import IconButton from "../IconButton";
 
 const Container = styled.div`
   min-height: 250px;
-  margin-bottom: 50px;
+  margin-bottom: 25px;
   overflow: auto;
 `;
 
