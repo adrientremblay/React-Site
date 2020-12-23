@@ -22,19 +22,21 @@ class Face extends Component {
         <Typist avgTypingDelay={40} onTypingDone={this.turnIconsOn}>
           <br />
           <br />
-          <Typist.Delay ms={3000} />
-          I study Software Engineering at Concordia University in Montreal,
-          Canada.
-          <br />
-          <br />
+          <Typist.Delay ms={1500} />
           I'm interested in web development
           <Typist.Backspace count={15} delay={500} />
           game development
           <Typist.Backspace count={16} delay={300} />
           operating systems
           <Typist.Backspace count={17} delay={300} />
-          anything computer science :) I'm also an avid runner, reader, and
-          singer. See my...
+          anything computer science!
+          <br />
+          <br />
+          If I'm not coding I'm usually tinkering on my ThinkPad, reading horror
+          novels, singing in the shower, or running in the park.
+          <br />
+          <br />
+          Check out my:
           <hr />
         </Typist>
 
