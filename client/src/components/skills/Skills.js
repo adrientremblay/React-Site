@@ -65,6 +65,7 @@ class Skills extends Component {
           "Agile Methodology",
           "Software Architecture",
           "UML modelling",
+          "Databases",
           "Design/Anti-Patterns",
           "Operating System design",
           "Requirements elicitation",

@@ -16,6 +16,10 @@ const StyledLink = styled(NavLink).attrs({ activeClassName })`
   font-weight: bold;
   font-size: large;
 
+  @media only screen and (max-width: 600px) {
+    font-size: small;
+  }
+
   &:hover,
   :active {
     color: red;
